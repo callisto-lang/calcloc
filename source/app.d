@@ -51,5 +51,6 @@ int main(string[] args) {
 	writefln("Blank:   %d", blank);
 	writefln("Comment: %d", comment);
 	writefln("Code:    %d", code);
+	writefln("Sum:     %d", blank + comment + code);
 	return 0;
 }
