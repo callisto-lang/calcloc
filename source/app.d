@@ -15,7 +15,7 @@ size_t code;
 
 void CountLines(string file) {
 	if (!exists(file)) {
-		stderr.writefln("'%s' doesn't exist");
+		stderr.writefln("'%s' doesn't exist", file);
 		exit(1);
 	}
 
@@ -43,7 +43,7 @@ int main(string[] args) {
 		return 0;
 	}
 
-	foreach (ref arg ; args) {
+	foreach (ref arg ; args[1 .. $]) {
 		CountLines(arg);
 	}
 
